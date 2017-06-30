@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 import { OFSearchProps } from "../interfaces";
 
 export class OpenFarmResults extends React.Component<OFSearchProps, {}> {

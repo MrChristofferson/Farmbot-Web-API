@@ -2,7 +2,7 @@ import * as React from "react";
 import { RegimenListItemProps } from "../interfaces";
 import { isMobile } from "../../util";
 import { selectRegimen } from "../actions";
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 import { TaggedRegimen, isTaggedRegimen } from "../../resources/tagged_resources";
 
 export function RegimenListItem({ regimen, dispatch }: RegimenListItemProps) {

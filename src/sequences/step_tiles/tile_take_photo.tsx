@@ -4,7 +4,7 @@ import { StepTitleBar } from "./step_title_bar";
 import { Help } from "../../ui";
 import { splice, remove } from "./index";
 import { t } from "i18next";
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 import { ToolTips } from "../../constants";
 
 export function TileTakePhoto({ dispatch, currentStep, index, currentSequence }: StepParams) {

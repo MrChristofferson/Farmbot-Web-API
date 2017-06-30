@@ -1,6 +1,6 @@
 import * as React from "react";
 import { connect } from "react-redux";
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 import { t } from "i18next";
 import { GardenMap } from "./map/garden_map";
 import { Props, State, BotOriginQuadrant } from "./interfaces";

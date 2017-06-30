@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Link } from "react-router";
+import { NavLink } from "react-router-dom";
 import { DropDownProps, NavBarState, NavBarProps } from "./interfaces";
 import { EStopButton } from "../devices/components/e_stop_btn";
 import { t } from "i18next";
@@ -7,7 +7,6 @@ import { Session } from "../session";
 import { Markdown } from "../ui";
 import * as moment from "moment";
 import { SyncButton } from "./sync_button";
-import { history } from "../history";
 import { updatePageInfo } from "../util";
 
 let DropDown = ({ user, onClick }: DropDownProps) => {
@@ -28,10 +27,10 @@ let DropDown = ({ user, onClick }: DropDownProps) => {
       <div className="nav-dropdown-content">
         <ul>
           <li>
-            <Link to="/app/account">
+            <NavLink to="/app/account">
               <i className="fa fa-cog"></i>
               {t("Account Settings")}
-            </Link>
+            </NavLink>
           </li>
           <li>
             <a href="https://software.farmbot.io/docs/the-farmbot-web-app"
@@ -96,13 +95,14 @@ export class NavBar extends React.Component<NavBarProps, NavBarState> {
     let tickerClass = this.state.tickerExpanded ? "expanded" : "";
 
     // The way our app is laid out, we'll pretty much always want this bit.
-    let pageName = history.getCurrentLocation().pathname.split("/")[2] || "";
+    // let pageName = history.getCurrentLocation().pathname.split("/")[2] || "";
+    let pageName = "FIXME";
 
     // Change document meta title on every route change.
     updatePageInfo(pageName);
 
     let { toggleMobileNav, toggleTicker, logout } = this;
-    let user = this.props.user
+    let user = this.props.user;
     return <div className="nav-wrapper">
       <nav role="navigation">
         <button
@@ -115,11 +115,13 @@ export class NavBar extends React.Component<NavBarProps, NavBarState> {
           <ul>
             {links.map(link => {
               return <li key={link.url}>
-                <Link to={link.url}
-                  activeClassName="active">
+                <NavLink
+                  to={link.url}
+                  activeClassName="active"
+                >
                   <i className={`fa fa-${link.icon}`} />
                   {link.name}
-                </Link>
+                </NavLink>
               </li>;
             })}
           </ul>
@@ -129,9 +131,9 @@ export class NavBar extends React.Component<NavBarProps, NavBarState> {
           incompatible) CSS. I'll look into this one. -CV */}
           <ul className="mobile-menu-extras">
             <li>
-              <Link to="/app/account">
+              <NavLink to="/app/account">
                 <i className="fa fa-cog"></i>{t("Account Settings")}
-              </Link>
+              </NavLink>
             </li>
             <li>
               <a href="https://software.farmbot.io/docs/the-farmbot-web-app"

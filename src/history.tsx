@@ -1,3 +1,3 @@
-import { browserHistory } from "react-router";
-export let history = browserHistory;
+import { BrowserRouter } from "react-router-dom";
+export let history: any = {};
 export let push = (url: string) => history.push(url);

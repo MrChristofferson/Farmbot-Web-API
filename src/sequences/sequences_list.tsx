@@ -2,7 +2,7 @@ import * as React from "react";
 import { selectSequence } from "./actions";
 import { SequencesListProps, SequencesListState } from "./interfaces";
 import { isMobile, sortResourcesById } from "../util";
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 import { Row, Col, ToolTip } from "../ui/index";
 import { TaggedSequence } from "../resources/tagged_resources";
 import { init } from "../api/crud";

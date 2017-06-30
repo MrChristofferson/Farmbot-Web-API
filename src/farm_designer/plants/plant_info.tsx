@@ -1,7 +1,7 @@
 import * as React from "react";
 import { connect } from "react-redux";
 import { t } from "i18next";
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 import { TaggedPlantPointer } from "../../resources/tagged_resources";
 import { mapStateToProps, formatPlantInfo } from "./map_state_to_props";
 import { PlantInfoBase } from "./plant_info_base";

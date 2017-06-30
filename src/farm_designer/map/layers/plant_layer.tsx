@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 import * as _ from "lodash";
 import { GardenPlant } from "../garden_plant";
 import { PlantLayerProps, CropSpreadDict } from "../interfaces";

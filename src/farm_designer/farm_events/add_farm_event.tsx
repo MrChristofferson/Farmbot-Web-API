@@ -7,7 +7,7 @@ import { init } from "../../api/crud";
 import { EditFEForm } from "./farm_event_form";
 import { betterCompact } from "../../util";
 import { entries } from "../../resources/util";
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 import {
   AddEditFarmEventProps,
   TaggedExecutable,

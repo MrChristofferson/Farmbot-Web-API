@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 import { DeprecatedFBSelect, Row, Col } from "../../ui";
 import { connect } from "react-redux";
 import { t } from "i18next";
