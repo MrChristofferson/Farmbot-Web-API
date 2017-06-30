@@ -68,7 +68,7 @@ export namespace OpenFarm {
     attributes: ImageAttrs;
   }
 
-  export let cropUrl = "https://openfarm.cc/api/v1/crops";
+    export let cropUrl = "https://openfarm.cc/crops/";
 }
 /** Returned by https://openfarm.cc/api/v1/crops?filter=q */
 export interface CropSearchResult {
