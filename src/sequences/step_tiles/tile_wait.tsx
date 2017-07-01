@@ -25,7 +25,7 @@ export function TileWait({ dispatch, currentStep, index, currentSequence }: Step
               }))} />
             <i className="fa fa-trash step-control"
               onClick={() => remove({ dispatch, index, sequence: currentSequence })} />
-            <Help text={t(ToolTips.WAIT)} />
+            <Help text={ToolTips.WAIT} />
           </div>
         </div>
       </div>

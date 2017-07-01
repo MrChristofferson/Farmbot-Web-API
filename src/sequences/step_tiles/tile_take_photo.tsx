@@ -25,7 +25,7 @@ export function TileTakePhoto({ dispatch, currentStep, index, currentSequence }:
               }))} />
             <i className="fa fa-trash step-control"
               onClick={() => remove({ dispatch, index, sequence: currentSequence })} />
-            <Help text={t(ToolTips.TAKE_PHOTO)} />
+            <Help text={ToolTips.TAKE_PHOTO} />
           </div>
         </div>
       </div>

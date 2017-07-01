@@ -26,7 +26,7 @@ export function TileMoveRelative({ dispatch, currentStep, index, currentSequence
               }))} />
             <i className="fa fa-trash step-control"
               onClick={() => remove({ dispatch, index, sequence: currentSequence })} />
-            <Help text={t(ToolTips.MOVE_RELATIVE)} />
+            <Help text={ToolTips.MOVE_RELATIVE} />
           </div>
         </div>
       </div>

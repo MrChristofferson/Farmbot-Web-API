@@ -36,7 +36,7 @@ export function HomingAndCalibration(props: HomingAndCalibrationProps) {
       <ZeroRow />
       <BooleanMCUInputGroup
         name={t("Find Home on Boot")}
-        tooltip={t(ToolTips.FIND_HOME_ON_BOOT)}
+        tooltip={ToolTips.FIND_HOME_ON_BOOT}
         disableX={!enabled.x}
         disableY={!enabled.y}
         disableZ={!enabled.z}
@@ -48,7 +48,7 @@ export function HomingAndCalibration(props: HomingAndCalibrationProps) {
       />
       <BooleanMCUInputGroup
         name={t("Stop at Home")}
-        tooltip={t(ToolTips.STOP_AT_HOME)}
+        tooltip={ToolTips.STOP_AT_HOME}
         x={"movement_stop_at_home_x"}
         y={"movement_stop_at_home_y"}
         z={"movement_stop_at_home_z"}
@@ -57,7 +57,7 @@ export function HomingAndCalibration(props: HomingAndCalibrationProps) {
       />
       <BooleanMCUInputGroup
         name={t("Stop at Max")}
-        tooltip={t(ToolTips.STOP_AT_MAX)}
+        tooltip={ToolTips.STOP_AT_MAX}
         x={"movement_stop_at_max_x"}
         y={"movement_stop_at_max_y"}
         z={"movement_stop_at_max_z"}
@@ -66,7 +66,7 @@ export function HomingAndCalibration(props: HomingAndCalibrationProps) {
       />
       <BooleanMCUInputGroup
         name={t("Negative Coordinates Only")}
-        tooltip={t(ToolTips.NEGATIVE_COORDINATES_ONLY)}
+        tooltip={ToolTips.NEGATIVE_COORDINATES_ONLY}
         x={"movement_home_up_x"}
         y={"movement_home_up_y"}
         z={"movement_home_up_z"}
@@ -75,7 +75,7 @@ export function HomingAndCalibration(props: HomingAndCalibrationProps) {
       />
       <NumericMCUInputGroup
         name={t("Axis Length (steps)")}
-        tooltip={t(ToolTips.LENGTH)}
+        tooltip={ToolTips.LENGTH}
         x={"movement_axis_nr_steps_x"}
         y={"movement_axis_nr_steps_y"}
         z={"movement_axis_nr_steps_z"}
@@ -84,7 +84,7 @@ export function HomingAndCalibration(props: HomingAndCalibrationProps) {
       />
       <NumericMCUInputGroup
         name={t("Timeout after (seconds)")}
-        tooltip={t(ToolTips.TIMEOUT_AFTER)}
+        tooltip={ToolTips.TIMEOUT_AFTER}
         x={"movement_timeout_x"}
         y={"movement_timeout_y"}
         z={"movement_timeout_z"}

@@ -76,7 +76,7 @@ export class WeedDetector
             onSave={() => { throw new Error("NEVER @@") }}
             onTest={this.test}
             title={"Weed Detector"}
-            help={t(ToolTips.WEED_DETECTOR)}
+            help={ToolTips.WEED_DETECTOR}
             env={this.props.env}
           />
           <Row>

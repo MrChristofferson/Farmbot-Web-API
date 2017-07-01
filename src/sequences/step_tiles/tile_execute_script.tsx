@@ -25,7 +25,7 @@ export function TileExecuteScript({ dispatch, currentStep, index, currentSequenc
                 }))} />
               <i className="fa fa-trash step-control"
                 onClick={() => remove({ dispatch, index, sequence: currentSequence })} />
-              <Help text={t(ToolTips.EXECUTE_SCRIPT)} />
+              <Help text={ToolTips.EXECUTE_SCRIPT} />
             </div>
           </div>
         </div>

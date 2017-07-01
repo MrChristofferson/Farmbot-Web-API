@@ -142,7 +142,7 @@ export class TileMoveAbsolute extends Component<StepParams, MoveAbsState> {
             <div className="help">
               <i className="fa fa-question-circle help-icon" />
               <div className="help-text">
-                {t(ToolTips.MOVE_ABSOLUTE)}
+                {ToolTips.MOVE_ABSOLUTE}
               </div>
             </div>
           </div>

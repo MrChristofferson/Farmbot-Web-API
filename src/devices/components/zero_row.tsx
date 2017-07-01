@@ -26,7 +26,7 @@ export function ZeroRow() {
       <div className="help">
         <i className="fa fa-question-circle help-icon" />
         <div className="help-text">
-          {t(ToolTips.SET_ZERO_POSITION)}
+          {ToolTips.SET_ZERO_POSITION}
         </div>
       </div>
     </Col>

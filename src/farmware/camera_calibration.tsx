@@ -21,7 +21,7 @@ export class CameraCalibration extends
         <Col>
           <TitleBar
             title={"Camera Calibration"}
-            help={t(ToolTips.CAMERA_CALIBRATION)}
+            help={ToolTips.CAMERA_CALIBRATION}
             onCalibrate={this.calibrate}
             env={this.props.env}
           />

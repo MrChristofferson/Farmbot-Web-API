@@ -25,7 +25,7 @@ export function TileReadPin({ dispatch, currentStep, index, currentSequence }: S
               }))} />
             <i className="fa fa-trash step-control"
               onClick={() => remove({ dispatch, index, sequence: currentSequence })} />
-            <Help text={t(ToolTips.READ_PIN)} />
+            <Help text={ToolTips.READ_PIN} />
           </div>
         </div>
       </div>

@@ -30,7 +30,7 @@ export function Motors({ dispatch, bot }: MotorsProps) {
           <label>
             {t("Max Retries")}
           </label>
-          <SpacePanelToolTip tooltip={t(ToolTips.MAX_MOVEMENT_RETRIES)} />
+          <SpacePanelToolTip tooltip={ToolTips.MAX_MOVEMENT_RETRIES} />
         </Col>
         <Col xs={6}>
           <BotConfigInputBox
@@ -41,7 +41,7 @@ export function Motors({ dispatch, bot }: MotorsProps) {
       </Row>
       <NumericMCUInputGroup
         name={t("Max Speed (steps/s)")}
-        tooltip={t(ToolTips.MAX_SPEED)}
+        tooltip={ToolTips.MAX_SPEED}
         x={"movement_max_spd_x"}
         y={"movement_max_spd_y"}
         z={"movement_max_spd_z"}
@@ -50,7 +50,7 @@ export function Motors({ dispatch, bot }: MotorsProps) {
       />
       <NumericMCUInputGroup
         name={t("Minimum Speed (steps/s)")}
-        tooltip={t(ToolTips.MIN_SPEED)}
+        tooltip={ToolTips.MIN_SPEED}
         x={"movement_min_spd_x"}
         y={"movement_min_spd_y"}
         z={"movement_min_spd_z"}
@@ -59,7 +59,7 @@ export function Motors({ dispatch, bot }: MotorsProps) {
       />
       <NumericMCUInputGroup
         name={t("Accelerate for (steps)")}
-        tooltip={t(ToolTips.ACCELERATE_FOR)}
+        tooltip={ToolTips.ACCELERATE_FOR}
         x={"movement_steps_acc_dec_x"}
         y={"movement_steps_acc_dec_y"}
         z={"movement_steps_acc_dec_z"}
@@ -71,7 +71,7 @@ export function Motors({ dispatch, bot }: MotorsProps) {
           <label>
             {t("Steps per MM")}
           </label>
-          <SpacePanelToolTip tooltip={t(ToolTips.STEPS_PER_MM)} />
+          <SpacePanelToolTip tooltip={ToolTips.STEPS_PER_MM} />
         </Col>
         <Col xs={2}>
           <BotConfigInputBox
@@ -97,7 +97,7 @@ export function Motors({ dispatch, bot }: MotorsProps) {
       </Row>
       <BooleanMCUInputGroup
         name={t("Always Power Motors")}
-        tooltip={t(ToolTips.ALWAYS_POWER_MOTORS)}
+        tooltip={ToolTips.ALWAYS_POWER_MOTORS}
         x={"movement_keep_active_x"}
         y={"movement_keep_active_y"}
         z={"movement_keep_active_z"}
@@ -106,7 +106,7 @@ export function Motors({ dispatch, bot }: MotorsProps) {
       />
       <BooleanMCUInputGroup
         name={t("Invert Motors")}
-        tooltip={t(ToolTips.INVERT_MOTORS)}
+        tooltip={ToolTips.INVERT_MOTORS}
         x={"movement_invert_motor_x"}
         y={"movement_invert_motor_y"}
         z={"movement_invert_motor_z"}
@@ -118,7 +118,7 @@ export function Motors({ dispatch, bot }: MotorsProps) {
           <label>
             {t("Enable 2nd X Motor")}
           </label>
-          <SpacePanelToolTip tooltip={t(ToolTips.ENABLE_X2_MOTOR)} />
+          <SpacePanelToolTip tooltip={ToolTips.ENABLE_X2_MOTOR} />
         </Col>
         <Col xs={2}>
           <ToggleButton
@@ -133,7 +133,7 @@ export function Motors({ dispatch, bot }: MotorsProps) {
           <label>
             {t("Invert 2nd X Motor")}
           </label>
-          <SpacePanelToolTip tooltip={t(ToolTips.INVERT_MOTORS)} />
+          <SpacePanelToolTip tooltip={ToolTips.INVERT_MOTORS} />
         </Col>
         <Col xs={2}>
           <ToggleButton

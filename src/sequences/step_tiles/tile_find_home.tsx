@@ -68,7 +68,7 @@ class InnerFindHome extends React.Component<FindHomeParams, {}> {
                 }))} />
               <i className="fa fa-trash step-control"
                 onClick={() => remove({ dispatch, index, sequence: currentSequence })} />
-              <Help text={t(ToolTips.FIND_HOME)} />
+              <Help text={ToolTips.FIND_HOME} />
             </div>
           </div>
         </div>

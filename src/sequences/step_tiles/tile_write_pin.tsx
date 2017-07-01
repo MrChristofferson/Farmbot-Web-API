@@ -25,7 +25,7 @@ export function TileWritePin({ dispatch, currentStep, index, currentSequence }: 
               }))} />
             <i className="fa fa-trash step-control"
               onClick={() => remove({ dispatch, index, sequence: currentSequence })} />
-            <Help text={t(ToolTips.WRITE_PIN)} />
+            <Help text={ToolTips.WRITE_PIN} />
           </div>
         </div>
       </div>

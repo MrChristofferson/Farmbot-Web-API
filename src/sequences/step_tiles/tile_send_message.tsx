@@ -108,7 +108,7 @@ class RefactoredSendMessage extends React.Component<SendMessageParams, {}> {
                 }))} />
               <i className="fa fa-trash step-control"
                 onClick={() => remove({ dispatch, index, sequence: currentSequence })} />
-              <Help text={t(ToolTips.SEND_MESSAGE)} />
+              <Help text={ToolTips.SEND_MESSAGE} />
             </div>
           </div>
         </div>

@@ -26,7 +26,7 @@ export function CalibrationRow(props: CalibrationRowProps) {
       <div className="help">
         <i className="fa fa-question-circle help-icon" />
         <div className="help-text">
-          {t(ToolTips.CALIBRATION)}
+          {ToolTips.CALIBRATION}
         </div>
       </div>
     </Col>
