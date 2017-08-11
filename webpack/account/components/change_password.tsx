@@ -4,7 +4,8 @@ import {
   BlurableInput,
   Widget,
   WidgetHeader,
-  WidgetBody
+  WidgetBody,
+  SaveBtn
 } from "../../ui";
 import { ChangePwPropTypes } from "../interfaces";
 
@@ -14,21 +15,25 @@ export class ChangePassword extends React.Component<ChangePwPropTypes, {}> {
     let npc = this.props.new_password_confirmation;
     let npcString = "new_password_confirmation";
 
+    let isSaving = this.props.user.saving;
+    let isDirty = this.props.user.dirty;
+    let isSaved = !isSaving && !isDirty;
+
     return (
       <Widget>
         <WidgetHeader title="Change Password">
-          {/* <SaveBtn
+          <SaveBtn
             onClick={save}
-            isDirty={user.dirty}
-            isSaving={user.saving}
-            isSaved={cleared}
-          /> */}
-          <button
+            isDirty={isDirty}
+            isSaving={isSaving}
+            isSaved={isSaved}
+          />
+          {/* <button
             onClick={save}
             className="fb-button green"
           >
             {t("Save")}
-          </button>
+          </button> */}
         </WidgetHeader>
         <WidgetBody>
           <form>
